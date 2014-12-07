@@ -15,6 +15,8 @@
 		47AA4BBA1A339D240079CA3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47AA4BB91A339D240079CA3A /* Images.xcassets */; };
 		47AA4BBD1A339D240079CA3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47AA4BBB1A339D240079CA3A /* LaunchScreen.xib */; };
 		47AA4BC91A339D250079CA3A /* MotorControlAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BC81A339D250079CA3A /* MotorControlAppTests.m */; };
+		47AA4BD41A33B10B0079CA3A /* XYZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BD31A33B10B0079CA3A /* XYZAddToDoItemViewController.m */; };
+		47AA4BD71A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BD61A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		47AA4BC21A339D250079CA3A /* MotorControlAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorControlAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AA4BC71A339D250079CA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47AA4BC81A339D250079CA3A /* MotorControlAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MotorControlAppTests.m; sourceTree = "<group>"; };
+		47AA4BD21A33B10B0079CA3A /* XYZAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZAddToDoItemViewController.h; sourceTree = "<group>"; };
+		47AA4BD31A33B10B0079CA3A /* XYZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAddToDoItemViewController.m; sourceTree = "<group>"; };
+		47AA4BD51A33B28D0079CA3A /* XYZTodoListControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTodoListControllerTableViewController.h; sourceTree = "<group>"; };
+		47AA4BD61A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTodoListControllerTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				47AA4BB31A339D240079CA3A /* ViewController.h */,
 				47AA4BB41A339D240079CA3A /* ViewController.m */,
 				47AA4BB61A339D240079CA3A /* Main.storyboard */,
+				47AA4BD51A33B28D0079CA3A /* XYZTodoListControllerTableViewController.h */,
+				47AA4BD61A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m */,
+				47AA4BD21A33B10B0079CA3A /* XYZAddToDoItemViewController.h */,
+				47AA4BD31A33B10B0079CA3A /* XYZAddToDoItemViewController.m */,
 				47AA4BB91A339D240079CA3A /* Images.xcassets */,
 				47AA4BBB1A339D240079CA3A /* LaunchScreen.xib */,
 				47AA4BB01A339D240079CA3A /* MotorControlApp.xcdatamodeld */,
@@ -222,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47AA4BD41A33B10B0079CA3A /* XYZAddToDoItemViewController.m in Sources */,
 				47AA4BAF1A339D240079CA3A /* AppDelegate.m in Sources */,
 				47AA4BB21A339D240079CA3A /* MotorControlApp.xcdatamodeld in Sources */,
+				47AA4BD71A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m in Sources */,
 				47AA4BB51A339D240079CA3A /* ViewController.m in Sources */,
 				47AA4BAC1A339D240079CA3A /* main.m in Sources */,
 			);
@@ -350,8 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MotorControlApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -360,8 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MotorControlApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
