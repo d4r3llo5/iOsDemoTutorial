@@ -17,6 +17,7 @@
 		47AA4BC91A339D250079CA3A /* MotorControlAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BC81A339D250079CA3A /* MotorControlAppTests.m */; };
 		47AA4BD41A33B10B0079CA3A /* XYZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BD31A33B10B0079CA3A /* XYZAddToDoItemViewController.m */; };
 		47AA4BD71A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BD61A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m */; };
+		47AA4BD91A34DD1C0079CA3A /* XYZToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 47AA4BD81A34DD1B0079CA3A /* XYZToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		47AA4BD31A33B10B0079CA3A /* XYZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAddToDoItemViewController.m; sourceTree = "<group>"; };
 		47AA4BD51A33B28D0079CA3A /* XYZTodoListControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTodoListControllerTableViewController.h; sourceTree = "<group>"; };
 		47AA4BD61A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTodoListControllerTableViewController.m; sourceTree = "<group>"; };
+		47AA4BD81A34DD1B0079CA3A /* XYZToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZToDoItem.m; sourceTree = "<group>"; };
+		47AA4BDC1A34DD850079CA3A /* XYZToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZToDoItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 		47AA4B9D1A339D240079CA3A = {
 			isa = PBXGroup;
 			children = (
+				47AA4BD81A34DD1B0079CA3A /* XYZToDoItem.m */,
+				47AA4BDC1A34DD850079CA3A /* XYZToDoItem.h */,
 				47AA4BA81A339D240079CA3A /* MotorControlApp */,
 				47AA4BC51A339D250079CA3A /* MotorControlAppTests */,
 				47AA4BA71A339D240079CA3A /* Products */,
@@ -238,6 +243,7 @@
 				47AA4BD71A33B28D0079CA3A /* XYZTodoListControllerTableViewController.m in Sources */,
 				47AA4BB51A339D240079CA3A /* ViewController.m in Sources */,
 				47AA4BAC1A339D240079CA3A /* main.m in Sources */,
+				47AA4BD91A34DD1C0079CA3A /* XYZToDoItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

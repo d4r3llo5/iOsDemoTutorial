@@ -9,14 +9,22 @@
 #import "XYZAddToDoItemViewController.h"
 
 @interface XYZAddToDoItemViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation XYZAddToDoItemViewController
 
-- (IBAction)unwindToList:(UIStoryboardSegue *)segue
-{
-    
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (sender != self.doneButton)      // Ignore all clicks but the done
+        return;
+    // If the done button was clicked
+    if (self.textField.text.length > 0) {   // and we have text in the box
+        self.toDoItem = [[XYZToDoItem alloc] init];
+        self.toDoItem.itemName = self.textField.text;
+        self.toDoItem.completed = NO;
+    }
 }
 
 - (void)viewDidLoad {

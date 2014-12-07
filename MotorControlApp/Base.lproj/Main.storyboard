@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mpo-32-Hee">
-                                <rect key="frame" x="16" y="64" width="568" height="30"/>
+                                <rect key="frame" x="16" y="128" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -28,7 +28,7 @@
                         <constraints>
                             <constraint firstItem="Mpo-32-Hee" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2zl-9P-03f"/>
                             <constraint firstItem="Mpo-32-Hee" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="37q-ZD-M3Z"/>
-                            <constraint firstItem="Mpo-32-Hee" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dwc-uN-4Gh"/>
+                            <constraint firstItem="Mpo-32-Hee" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="dwc-uN-4Gh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Item" id="eOZ-aP-mUy">
@@ -43,6 +43,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="L2w-Fk-xRA" id="2cN-wQ-blf"/>
+                        <outlet property="textField" destination="Mpo-32-Hee" id="R0Q-cX-028"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="VDG-Nm-QHr" userLabel="Exit" sceneMemberID="exit"/>
@@ -58,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UW0-zF-TRQ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" id="UW0-zF-TRQ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UW0-zF-TRQ" id="ACL-IR-dvf">
                                     <autoresizingMask key="autoresizingMask"/>
